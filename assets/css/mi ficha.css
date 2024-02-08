@@ -1,0 +1,40 @@
+/* mi-ficha.css */
+
+/* Estilos específicos para la página 'Mi Ficha' */
+.ficha-info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: #fff; /* Fondo blanco para la sección de la ficha */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave para la tarjeta */
+    margin-bottom: 20px;
+  }
+  
+  .ficha-imagen img {
+    width: 120px; /* Ajusta el tamaño según sea necesario */
+    height: 120px; /* Asegúrate de que la imagen sea cuadrada */
+    border-radius: 50%; /* Opcional: para hacer la imagen redonda */
+    object-fit: cover; /* Para mantener la relación de aspecto de la imagen */
+    margin-right: 20px;
+  }
+  
+  .ficha-datos {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ficha-datos h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  .ficha-datos p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  /* Puedes agregar más estilos según lo necesites para otros elementos */
+  

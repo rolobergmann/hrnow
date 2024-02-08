@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Aplicación Web</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="sidebar" id="sidebar">
+  <!-- Botón para retraer la barra lateral -->
+  <div class="toggle-sidebar" onclick="toggleSidebar()">☰</div>
+  <!-- Logo de la empresa -->
+  <img src="assets/img/HRNOW LOGO ABSTRACT WHITE.webp" alt="Logo de HRNOW" class="logo">
+  <!-- Enlaces de la barra lateral -->
+  <a href="#home">Portal</a>
+  <a href="#ficha">Mi ficha</a>
+  <a href="#beneficios">Mis Beneficios</a>
+  <a href="#encuestas">Mis Encuestas</a>
+  <a href="#evaluaciones">Mis Evaluaciones</a>
+  <a href="#organigrama">Organigrama</a>
+  <a href="#directorio">Directorio</a>
+</div>
+
+<div class="main-content" id="main-content">
+  <!-- Contenido principal que cambiará con JavaScript según la sección seleccionada -->
+  <h2>Contenido Principal</h2>
+  <p>Selecciona una opción del menú para ver la información.</p>
+</div>
+
+<script>
+// Función para alternar la retracción de la barra lateral
+function toggleSidebar() {
+  var sidebar = document.getElementById("sidebar");
+  var mainContent = document.getElementById("main-content");
+  sidebar.classList.toggle("retracted");
+  mainContent.classList.toggle("expanded");
+}
+</script>
+
+</body>
+</html>

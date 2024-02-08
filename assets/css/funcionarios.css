@@ -1,0 +1,126 @@
+/* Establecer variables de colores en tonos de gris */
+:root {
+    --color-dark: #121212; /* Fondo muy oscuro */
+    --color-dark-secondary: #1e1e1e; /* Fondo oscuro secundario */
+    --color-dark-tertiary: #2c2c2c; /* Fondo oscuro terciario */
+    --color-grey: #424242; /* Gris para elementos */
+    --color-light-grey: #b3b3b3; /* Gris claro para bordes y líneas divisorias */
+    --color-text: #ffffff; /* Texto principal blanco */
+    --color-text-secondary: #e0e0e0; /* Texto secundario más suave */
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--color-dark);
+    color: var(--color-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text);
+}
+
+/* Enlaces */
+a {
+    color: var(--color-light-grey);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-text-secondary);
+}
+
+/* Botones */
+button {
+    background-color: var(--color-grey);
+    color: var(--color-text);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--color-dark-tertiary);
+}
+
+/* Inputs de formularios */
+input, select, textarea {
+    background-color: var(--color-dark-secondary);
+    color: var(--color-text);
+    border: 1px solid var(--color-light-grey);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid var(--color-light-grey);
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: var(--color-grey);
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-dark-secondary);
+}
+
+tr:hover {
+    background-color: var(--color-dark-tertiary);
+}
+
+/* Clases utilitarias para margen y padding */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+
+.pt-1 { padding-top: 0.25rem; }
+.pt-2 { padding-top: 0.5rem; }
+.pt-3 { padding-top: 1rem; }
+.pt-4 { padding-top: 1.5rem; }
+.pt-5 { padding-top: 3rem; }
+
+/* Responsive */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-dark);
+        color: var(--color-text);
+    }
+}
+
+/* Contenedor */
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Formulario de adición de items */
+#add-item-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-item-form input {
+    flex-grow: 1;
+    max-width: calc(100% - 80px); /* Resta el ancho del botón más el gap */
+}

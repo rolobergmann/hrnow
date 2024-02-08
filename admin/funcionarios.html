@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Dinámica con Tema Oscuro</title>
+    <link rel="stylesheet" href="../assets/css/funcionarios.css">
+    <!-- Estilos -->
+</head>
+<body>
+
+<div class="container mt-5">
+    <input type="text" id="search-input" class="form-control mb-3" placeholder="Buscar...">
+
+    <!-- Formulario para agregar nuevos ítems -->
+    <div id="add-item-form" class="mb-3">
+        <input type="text" id="new-item-name" class="form-control mb-2" placeholder="Nombre del ítem">
+        <input type="number" id="new-item-price" class="form-control mb-2" placeholder="Precio del ítem">
+        <button id="add-item" class="btn btn-primary">Agregar Item</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID Funcionario</th>
+                <th>Nombre Funcionario</th>
+                <th>Salario</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Los elementos de la tabla se llenarán con JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+<script src="../assets/js/funcionarios.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

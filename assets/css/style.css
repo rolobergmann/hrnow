@@ -1,0 +1,65 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #333; /* Fondo oscuro para todo el sitio */
+    color: #fff; /* Texto blanco para contraste */
+  }
+  
+  /* Barra lateral retractil */
+  .sidebar {
+    background-color: #222;
+    overflow-y: auto;
+    width: 250px; /* Ancho inicial de la barra lateral */
+    height: 100%;
+    position: fixed;
+    transition: width 0.5s; /* Suaviza la transición de la barra lateral */
+  }
+  
+  /* Estado retractil de la barra lateral */
+  .sidebar.retracted {
+    width: 65px; /* Ancho de la barra lateral retraída */
+  }
+  
+  /* Enlaces de la barra lateral */
+  .sidebar a {
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #444;
+  }
+  
+  /* Botón para retraer la barra lateral */
+  .toggle-sidebar {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    background: #444;
+  }
+  
+  /* Contenido principal */
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px; /* Debe coincidir con el ancho inicial de la barra lateral */
+    transition: margin-left 0.5s; /* Suaviza la transición del contenido principal */
+  }
+  
+  /* Ajuste cuando la barra lateral está retraída */
+  .main-content.expanded {
+    margin-left: 65px; /* Debe coincidir con el ancho de la barra lateral retraída */
+  }
+  
+  .logo {
+    display: block; /* Asegúrate de que el logo se muestre en bloque */
+    max-width: 100%; /* El logo usará como máximo el 100% del ancho disponible */
+    max-height: 60px; /* Ajusta la altura máxima a tu preferencia */
+    margin: 0 auto; /* Centrar el logo horizontalmente */
+  }
+    
